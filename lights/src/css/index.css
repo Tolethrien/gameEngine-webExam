@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  display: block;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: wheat;
+}
+
+#gameWindow {
+  display: inline-block;
+}
+
+.loadingScreen {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 600px;
+  width: 800px;
+}
+.errorScreen {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  height: 600px;
+  width: 800px;
+  background-image: url("../assets/dead2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  outline: wheat 1px solid;
+}
+.errorScreen > span {
+  display: inline-block;
+  padding-top: 150px;
+}
+.roundBoy {
+  width: 10rem;
+  height: 4rem;
+}
+#emoji {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  left: -10%;
+  top: 50%;
+  width: 12rem;
+  animation: spin-animation 2s linear infinite;
+}
+
+@keyframes spin-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
